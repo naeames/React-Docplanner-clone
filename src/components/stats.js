@@ -13,11 +13,22 @@ const Stats=props=> {
 
 
        <div class="right">
-               {props.stat.map(el =><div className="items">
-               <img src= {el.image}/>
-                <h3>{el.title}</h3>
-                <p>{el.p}</p> 
-                </div>)}
+       {props.stat.map((el, index)=> (
+                  (index===0 || index===2) ?(
+                  <div className="items" style={{marginTop:30}}>
+                      <img src= {el.image}/>
+                        <h3>{el.title}</h3>
+                        <p>{el.p}</p> 
+                    </div>
+               ):(
+                <div className="items">
+                      <img src= {el.image}/>
+                        <h3>{el.title}</h3>
+                        <p>{el.p}</p> 
+                    </div>
+               
+               ))
+               )}
 
                 </div>
                 </section>

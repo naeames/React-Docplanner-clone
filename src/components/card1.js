@@ -4,10 +4,14 @@ import React from 'react';
 function Main (props){
     return (
         <div className='main-section'>
+
+            <div className="card1">   
+
             {props.main.map((el)=>
-            <div className='cards' >
+            <div className='card1' >
                 <p className='main-title'>{el.title}</p>
                 <p className='main-p'>{el.h3}</p>
+                
                 <div className='main-select'>{el.select ? 
                 <select id="choose-country">
                 <option>{el.select}</option>
@@ -28,11 +32,13 @@ function Main (props){
                     <option value="#">UK</option>
                 </select>
                 : null}</div>
-                <img className='image' src={el.src}></img>
+              <img className='image' src={el.src}></img>
             </div>
             )}
+</div>
 
-        </div>
+
+ </div>
     )
   }
   export default Main

@@ -12,7 +12,7 @@ const Lead = props => {
              <h1>{props.leads[1].h1} </h1>
              <div className="pr">
                      <p>{props.leads[2].p}</p>
-                     <p>{props.leads[2].p}</p>
+                     <p>{props.leads[3].p}</p>
                       
              </div>
          </div>
